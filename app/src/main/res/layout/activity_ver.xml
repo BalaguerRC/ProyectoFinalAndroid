@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles del Producto"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/TxtDetalles"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Producto"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/TxtEditar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTitulo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditDescripcion"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/EditPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/BtnGuardar"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+        <ImageButton
+            android:id="@+id/btnEditar"
+            android:layout_width="62dp"
+            android:layout_height="66dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="#FFC300"
+            android:src="@drawable/edit" />
+        <ImageButton
+            android:layout_marginTop="5dp"
+            android:layout_width="62dp"
+            android:layout_height="66dp"
+            android:src="@drawable/delete"
+            android:id="@+id/btnEliminar"
+            android:background="#D54438"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

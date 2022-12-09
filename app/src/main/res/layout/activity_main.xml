@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/Liner">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestor Producto"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/BtnRegistro"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/Liner"
+                app:srcCompat="@drawable/add"
+                tools:ignore="NotSibling" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Producto"
+                android:layout_below="@id/BtnRegistro"
+                android:layout_alignEnd="@id/BtnRegistro"
+                android:id="@+id/TxtView1"
+                />
+            <ImageButton
+                android:id="@+id/BtnLista"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/Liner"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="65dp"
+                app:srcCompat="@drawable/ver"
+                tools:ignore="NotSibling" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Productos"
+                android:layout_below="@id/BtnLista"
+                android:layout_alignEnd="@id/BtnLista"
+                android:id="@+id/TextView2"/>
+            <ImageButton
+                android:id="@+id/BtnInfo"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TxtView1"
+                app:srcCompat="@drawable/info"
+                tools:ignore="NotSibling"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informacion"
+                android:layout_marginRight="14dp"
+                android:layout_below="@id/BtnInfo"
+                android:layout_alignEnd="@id/BtnInfo"
+                />
+            <ImageButton
+                android:id="@+id/BtnSalir"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/TextView2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="55dp"
+                app:srcCompat="@drawable/salir"
+                tools:ignore="NotSibling" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salir"
+                android:layout_marginRight="35dp"
+                android:layout_below="@id/BtnSalir"
+                android:layout_alignEnd="@id/BtnSalir"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
